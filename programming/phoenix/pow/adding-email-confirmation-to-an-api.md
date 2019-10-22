@@ -64,12 +64,45 @@ config :my_app, :pow,
 
 2. Add `|> pow_extension_changeset(attrs)` to your changeset in `user.ex`.
 If you don't have a changeset defined in `user.ex` yet, you can use this one:
-```
+```elixir
   def changeset(user_or_changeset, attrs) do
     user_or_changeset
     |> pow_changeset(attrs)
     |> pow_extension_changeset(attrs)
   end
+```
+
+Example of my entire User.ex (note I have previously added one custom field,
+unrelated to Email Confirm).
+
+```elixir
+defmodule MyApp.Users.User do
+  @moduledoc """
+  Represents a user of the system.
+  Managed by the "pow" library.
+  """
+  use Ecto.Schema
+  use Pow.Ecto.Schema
+
+  use Pow.Extension.Ecto.Schema,
+    extensions: [PowResetPassword, PowEmailConfirmation]
+
+  schema "users" do
+    pow_user_fields()
+    field(:alias, :string)
+
+    timestamps()
+  end
+
+  def changeset(user_or_changeset, attrs) do
+    user_or_changeset
+    |> pow_changeset(attrs)
+    |> pow_extension_changeset(attrs)
+    |> Ecto.Changeset.cast(attrs, [:alias])
+    |> Ecto.Changeset.validate_required([:alias])
+    |> Ecto.Changeset.unique_constraint(:alias)
+  end
+end
 ```
 
 ## Make the API send a confirmation email on registration
@@ -108,12 +141,12 @@ since I needed it to make a url that pointed to my own frontend.
 in `lib/my_app_web/controllers/api/v1/registration_controller.ex`
 
 ```elixir
-defmodule SpadesWeb.API.V1.RegistrationController do
-  use SpadesWeb, :controller
+defmodule MyAppWeb.API.V1.RegistrationController do
+  use MyAppWeb, :controller
 
   alias Ecto.Changeset
   alias Plug.Conn
-  alias SpadesWeb.ErrorHelpers
+  alias MyAppWeb.ErrorHelpers
 
   @spec create(Conn.t(), map()) :: Conn.t()
   def create(conn, %{"user" => user_params}) do
@@ -139,6 +172,8 @@ defmodule SpadesWeb.API.V1.RegistrationController do
     end
   end
 
+  ## Two Functions Added below
+
   _ = """
   Sends a confirmation e-mail to the user.
 
@@ -161,7 +196,7 @@ defmodule SpadesWeb.API.V1.RegistrationController do
   end
 
   defp confirmation_url(token) do
-    Application.get_env(:spades, SpadesWeb.Endpoint)[:front_end_email_confirm_url]
+    Application.get_env(:spades, MyAppWeb.Endpoint)[:front_end_email_confirm_url]
     |> String.replace("{token}", token)
   end
 end
@@ -186,10 +221,9 @@ My api/v1 section of the `router.ex`:
 Add the controller, in: `lib/my_app_web/controllers/api/v1/confirmation_controller.ex`
 
 ```elixir
-defmodule SpadesWeb.API.V1.ConfirmationController do
-  use SpadesWeb, :controller
+defmodule MyAppWeb.API.V1.ConfirmationController do
+  use MyAppWeb, :controller
 
-  alias SpadesWeb.APIAuthPlug
   alias Plug.Conn
 
   @spec show(Conn.t(), map()) :: Conn.t()
@@ -199,7 +233,7 @@ defmodule SpadesWeb.API.V1.ConfirmationController do
         conn
         |> json(%{success: %{message: "Email confirmed"}})
 
-      {:error, changeset, conn} ->
+      {:error, _changeset, conn} ->
         conn
         |> put_status(401)
         |> json(%{error: %{status: 401, message: "Invalid confirmation code"}})
@@ -229,5 +263,5 @@ Note what we don't do:
 * No way to resend confirmation email.
 
 However, I was able to get an email sent on registration with a link that
-updates that user as confirmed in the database.
+updates that user as confirmed in the database, so the basics are working.
 
