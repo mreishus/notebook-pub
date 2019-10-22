@@ -198,7 +198,7 @@ defmodule MyAppWeb.API.V1.RegistrationController do
   end
 
   defp confirmation_url(token) do
-    Application.get_env(:spades, MyAppWeb.Endpoint)[:front_end_email_confirm_url]
+    Application.get_env(:my_app, MyAppWeb.Endpoint)[:front_end_email_confirm_url]
     |> String.replace("{token}", token)
   end
 end
@@ -269,5 +269,5 @@ updates that user as confirmed in the database, so the basics are working.
 
 ```
 Created:       Tue 22 Oct 2019 06:46:12 AM CDT
-Last Modified: Tue 22 Oct 2019 07:08:36 AM CDT
+Last Modified: Tue 22 Oct 2019 07:18:17 AM CDT
 ```
