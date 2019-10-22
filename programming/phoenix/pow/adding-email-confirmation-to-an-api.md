@@ -5,14 +5,15 @@ If that's not the case, first check out the [Pow API Guide](https://github.com/d
 
 ## Rough Guide Notice
 
-This is my first pass at this.  I've had to do some hackish
-changes.  Also, not all features of the `PowEmailConfirmation` extension are
-implemented.  This is is more of a "What one person did to get it to work"
+This is my first pass at this. I've had to do some hackish
+changes. Also, not all features of the `PowEmailConfirmation` extension are
+implemented. This is is more of a "What one person did to get it to work"
 and not a "officially sanctioned guide."
 
 ## Mailer
 
-First, make sure a mailer is configured.  Here's a fake mailer from the README.  Place in `WEB_PATH/pow_mailer.ex`.
+First, make sure a mailer is configured. Here's a fake mailer from the README.
+Place in `WEB_PATH/pow_mailer.ex`.
 
 ```elixir
 defmodule MyAppWeb.PowMailer do
@@ -38,6 +39,7 @@ end
 ### Generate and run migrations
 
 in shell:
+
 ```sh
 mix pow.extension.ecto.gen.migrations --extension PowEmailConfirmation
 mix.ecto.migrate
@@ -46,6 +48,7 @@ mix.ecto.migrate
 ### Add extensions to Config
 
 in `config.exs`, add the `extensions` and `controller_callbacks` to the pow config:
+
 ```elixir
 config :my_app, :pow,
   user: MyApp.Users.User,
@@ -57,13 +60,15 @@ config :my_app, :pow,
 ### Add extensions to User
 
 1. Add the extension schema near the top of `user.ex`:
+
 ```elixir
   use Pow.Extension.Ecto.Schema,
     extensions: [PowResetPassword, PowEmailConfirmation]
 ```
 
 2. Add `|> pow_extension_changeset(attrs)` to your changeset in `user.ex`.
-If you don't have a changeset defined in `user.ex` yet, you can use this one:
+   If you don't have a changeset defined in `user.ex` yet, you can use this one:
+
 ```elixir
   def changeset(user_or_changeset, attrs) do
     user_or_changeset
@@ -109,16 +114,13 @@ end
 
 ### Set front end URL in config
 
-First, we will need to tell our phoenix app the URL for registration
-it should generate.  In my case, I have a react app frontend using
-the phoenix app as an API server, so the user needs to click on a
-URL that goes to the react app.
-
+First, we will need to tell our phoenix app the URL for registration it should generate. In my case, I have a react app frontend using the phoenix app as an API server, so the user needs to click on a URL that goes to the react app.
 I added a `front_end_email_confirm_url` key to my WebEndpoint config,
-inside `dev.exs`, `test.exs`, and `prod.exs`.  These are specific
+inside `dev.exs`, `test.exs`, and `prod.exs`. These are specific
 to my frontend.
 
 `dev.exs`
+
 ```elixir
 config :myapp, MyAppWeb.Endpoint,
   http: [port: 4000],
@@ -129,13 +131,13 @@ config :myapp, MyAppWeb.Endpoint,
   front_end_email_confirm_url: "http://localhost:3000/confirm-email/{token}"   # line added
 ```
 
-Also add to your `test.exs` and `prod.exs`.  In prod, use your prod url.  Your
+Also add to your `test.exs` and `prod.exs`. In prod, use your prod url. Your
 dev url may be different than mine.
 
 ## Make the registration controller send the email.
 
 I added a call to `send_confirmation_email()` in the `{:ok, ...}` path
-of the `create` function.  I had to copy the function and modify it slightly,
+of the `create` function. I had to copy the function and modify it slightly,
 since I needed it to make a url that pointed to my own frontend.
 
 in `lib/my_app_web/controllers/api/v1/registration_controller.ex`
@@ -244,11 +246,11 @@ end
 
 ## Make your front end query the confirmation controller
 
-This part's up to you.  When the user clicks on the link you specified
+This part's up to you. When the user clicks on the link you specified
 in the config above, it should hit the confirmation controller you just made.
 
 ```javascript
-axios(`/api/v1/confirm-email/${confirm_token}`)
+axios(`/api/v1/confirm-email/${confirm_token}`);
 ```
 
 is a decent place to start in javascript, but this is outside the scope of pow.
@@ -257,15 +259,15 @@ is a decent place to start in javascript, but this is outside the scope of pow.
 
 Note what we don't do:
 
-* The entire "change email" flow is missing.
-* There is no login denial on unconfirmed email address.
-* No integration with `PowInvitation`.
-* No way to resend confirmation email.
+- The entire "change email" flow is missing.
+- There is no login denial on unconfirmed email address.
+- No integration with `PowInvitation`.
+- No way to resend confirmation email.
 
 However, I was able to get an email sent on registration with a link that
 updates that user as confirmed in the database, so the basics are working.
 
 ```
-Created:       Tue 22 Oct 2019 06:46:12 AM CDT 
-Last Modified: Tue 22 Oct 2019 06:46:24 AM CDT
+Created:       Tue 22 Oct 2019 06:46:12 AM CDT
+Last Modified: Tue 22 Oct 2019 07:08:36 AM CDT
 ```
