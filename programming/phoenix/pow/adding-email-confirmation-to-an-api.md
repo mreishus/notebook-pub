@@ -265,3 +265,7 @@ Note what we don't do:
 However, I was able to get an email sent on registration with a link that
 updates that user as confirmed in the database, so the basics are working.
 
+```
+Created:       Tue 22 Oct 2019 06:46:12 AM CDT 
+Last Modified: Tue 22 Oct 2019 06:46:24 AM CDT
+```

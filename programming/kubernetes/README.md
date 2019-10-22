@@ -17,3 +17,7 @@ to VMs and linux servers I had in my apartment, which RKE did easily.
   (2017)](https://www.manning.com/books/kubernetes-in-action) - Book that I
   used to work through the initial concepts.  Recommended.
 
+```
+Created:       Tue 22 Oct 2019 06:46:45 AM CDT 
+Last Modified: Tue 22 Oct 2019 06:46:45 AM CDT
+```
