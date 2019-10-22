@@ -1,9 +1,9 @@
-## Pow
+# Pow
 
-The Phoenix web framework. 
+The Phoenix web framework.
 
 [Phoenix on Github](https://github.com/phoenixframework/phoenix)
 
 ## Contents
 
-* [Pow, authentication library](./pow/)
+- [Pow, authentication library](./pow/)

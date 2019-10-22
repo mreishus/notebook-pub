@@ -53,7 +53,7 @@ in `config.exs`, add the `extensions` and `controller_callbacks` to the pow conf
 config :my_app, :pow,
   user: MyApp.Users.User,
   repo: MyApp.Repo,
-  extensions: [PowEmailConfirmation],                              # Line Added
+  extensions: [PowEmailConfirmation, PowResetPassword],            # Line Added
   controller_callbacks: Pow.Extension.Phoenix.ControllerCallbacks  # Line Added
 ```
 
@@ -115,6 +115,7 @@ end
 ### Set front end URL in config
 
 First, we will need to tell our phoenix app the URL for registration it should generate. In my case, I have a react app frontend using the phoenix app as an API server, so the user needs to click on a URL that goes to the react app.
+
 I added a `front_end_email_confirm_url` key to my WebEndpoint config,
 inside `dev.exs`, `test.exs`, and `prod.exs`. These are specific
 to my frontend.
@@ -269,5 +270,5 @@ updates that user as confirmed in the database, so the basics are working.
 
 ```
 Created:       Tue 22 Oct 2019 06:46:12 AM CDT
-Last Modified: Tue 22 Oct 2019 07:18:17 AM CDT
+Last Modified: Tue 22 Oct 2019 05:33:32 PM CDT
 ```
