@@ -6,5 +6,4 @@ The Phoenix web framework.
 
 ## Contents
 
-* [Pow, authentication library (dir)](./pow/)
-* [Pow, authentication library (readme)](./pow/README.md)
+* [Pow, authentication library](./pow/)
