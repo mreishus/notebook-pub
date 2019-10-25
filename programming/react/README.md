@@ -4,7 +4,9 @@
 
 `yarn add react@experimental`
 
-[Concurrent Mode Experimental Docs](https://reactjs.org/docs/concurrent-mode-intro.html)
+* [Concurrent Mode Experimental Docs](https://reactjs.org/docs/concurrent-mode-intro.html)
+* [Concurrent Mode Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)
+* [Concurrent Mode Patterns](https://reactjs.org/docs/concurrent-mode-patterns.html)
 
 ## Misc useful projects
 
