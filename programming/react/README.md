@@ -4,9 +4,9 @@
 
 `yarn add react@experimental`
 
-* [Concurrent Mode Experimental Docs](https://reactjs.org/docs/concurrent-mode-intro.html)
-* [Concurrent Mode Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)
-* [Concurrent Mode Patterns](https://reactjs.org/docs/concurrent-mode-patterns.html)
+- [Concurrent Mode Experimental Docs](https://reactjs.org/docs/concurrent-mode-intro.html)
+- [Concurrent Mode Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)
+- [Concurrent Mode Patterns](https://reactjs.org/docs/concurrent-mode-patterns.html)
 
 ## Misc useful projects
 
@@ -14,5 +14,9 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Thu 24 Oct 2019 02:02:57 PM CDT
+Last Modified: Fri 25 Oct 2019 07:15:40 PM CDT
 ```
+
+## Links
+
+[Mobile First Animations](./mobile-first-animations.md)
