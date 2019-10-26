@@ -8,6 +8,13 @@
 - [Concurrent Mode Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)
 - [Concurrent Mode Patterns](https://reactjs.org/docs/concurrent-mode-patterns.html)
 
+## Animation Tools
+
+- [react-spring](https://github.com/react-spring/react-spring)
+- [zustand](https://github.com/react-spring/zustand)
+- [react-use-gesture](https://github.com/react-spring/react-use-gesture)
+- [react-three-fiber](https://github.com/react-spring/react-three-fiber)
+
 ## Misc useful projects
 
 [Why Did You Render?](https://github.com/welldone-software/why-did-you-render)
@@ -19,4 +26,4 @@ Last Modified: Fri 25 Oct 2019 07:15:40 PM CDT
 
 ## Links
 
-[Mobile First Animations](./mobile-first-animations.md)
+[Mobile First Animations](./talks/mobile-first-animations.md)
