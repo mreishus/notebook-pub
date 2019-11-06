@@ -17,7 +17,9 @@
 
 ## Misc useful projects
 
-[Why Did You Render?](https://github.com/welldone-software/why-did-you-render)
+- [Why Did You Render?](https://github.com/welldone-software/why-did-you-render)
+- [Example of page transition animation, Diag
+  sweep](https://codesandbox.io/s/diagonal-page-transition-2wvzx)
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
