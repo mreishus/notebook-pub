@@ -1,5 +1,11 @@
 # React
 
+## State Management
+
+- [Zustand](https://github.com/react-spring/zustand) (Redux alternative)
+- [Redux Toolkit](https://github.com/reduxjs/redux-toolkit) (Reduces the pain
+  of redux)
+
 ## Concurrent Mode
 
 `yarn add react@experimental`
@@ -21,11 +27,11 @@
 - [Example of page transition animation, Diag
   sweep](https://codesandbox.io/s/diagonal-page-transition-2wvzx)
 
-```
-Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Fri 25 Oct 2019 07:15:40 PM CDT
-```
-
 ## Links
 
 [Mobile First Animations](./talks/mobile-first-animations.md)
+
+```
+Created:       Thu 24 Oct 2019 11:40:32 AM CDT
+Last Modified: Sun 17 Nov 2019 08:13:27 AM CST
+```
