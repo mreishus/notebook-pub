@@ -5,6 +5,9 @@
 - [Zustand](https://github.com/react-spring/zustand) (Redux alternative)
 - [Redux Toolkit](https://github.com/reduxjs/redux-toolkit) (Reduces the pain
   of redux)
+- [Redux style
+  guide](https://redux.js.org/style-guide/style-guide#redux-style-guide)
+  (Official Guidance on using redux)
 
 ## Concurrent Mode
 
@@ -33,5 +36,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Sun 17 Nov 2019 08:13:27 AM CST
+Last Modified: Wed 20 Nov 2019 10:17:19 AM CST
 ```
