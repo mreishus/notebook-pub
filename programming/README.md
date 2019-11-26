@@ -5,6 +5,7 @@ Programming: Making computers do things.
 ## Contents
 
 - [Elixir, Language](./elixir/)
+- [Go, Language](./go/)
 - [Haskell, Language](./haskell/)
 - [Kubernetes, container orchestration](./kubernetes/)
 - [Phoenix, Web Framework](./phoenix/)
@@ -17,5 +18,5 @@ Programming: Making computers do things.
 
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Sat 23 Nov 2019 04:52:51 AM UTC
+Last Modified: Tue 26 Nov 2019 05:31:27 AM UTC
 ```
