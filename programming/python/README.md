@@ -2,6 +2,17 @@
 
 - [The Elements of Python Style](https://github.com/amontalenti/elements-of-python-style)
 
+## Books
+
+Best non-beginner books for python:
+
+- [Fluent
+  Python](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008)
+- [Effective Python, 2nd
+  Ed](https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134853989)
+- [Python Cookbook, 3rd
+  Ed](https://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377)
+
 ## Advent of Code Tips
 
 Be familiar with:
@@ -46,5 +57,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Sun 17 Nov 2019 07:41:24 AM CST
+Last Modified: Thu 26 Dec 2019 02:26:52 PM CST
 ```
