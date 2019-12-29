@@ -11,6 +11,14 @@
 
 - [Map to Struct, forum thread](https://elixirforum.com/t/how-to-get-struct-from-map-elixir/4543/29)
 
+## Compile Elixir to Native Code
+
+Add this to the top of an arithmatic based module.
+
+```elixir
+    @compile [:native, {:hipe, [:verbose, :o3]}]
+```
+
 ## Basic GenServer Template
 
 ```elixir
@@ -47,5 +55,5 @@ end
 
 ```
 Created:       Tue 05 Nov 2019 06:45:54 PM CST
-Last Modified: Sat 07 Dec 2019 04:13:32 PM CST
+Last Modified: Sun 29 Dec 2019 04:53:20 PM CST
 ```
