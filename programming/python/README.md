@@ -13,6 +13,33 @@ Best non-beginner books for python:
 - [Python Cookbook, 3rd
   Ed](https://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377)
 
+## Conda
+
+from internet comment:
+
+I have been using a consistent setup that hasn't yet failed me for the past 2 years.
+
+1. Install Anaconda to your home user directory .
+
+2. create environment using (`conda create --name myenv python=3.6`) .
+
+3. Switch to the environment using (`conda activate myenv`) .
+
+4. Use (`conda install mypackage`), (`pip install mypackage`) in that priority order .
+
+5. Export environment using (`conda env export > conda_env.yaml`) .
+
+6. Environment can be created on an other system using (`conda env create -f conda_env.yaml`) .
+
+Anaconda: https://www.anaconda.com/distribution/#download-section .
+
+Dockerized Anaconda: https://docs.anaconda.com/anaconda/user-guide/tasks/docker/ .
+
+
+
+
+
+
 ## Advent of Code Tips
 
 Be familiar with:
