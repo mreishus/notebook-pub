@@ -19,26 +19,67 @@ from internet comment:
 
 I have been using a consistent setup that hasn't yet failed me for the past 2 years.
 
-1. Install Anaconda to your home user directory .
+1. Install Anaconda to your home user directory.
+2. create environment using (`conda create --name myenv python=3.6`).
+3. Switch to the environment using (`conda activate myenv`).
+4. Use (`conda install mypackage`), (`pip install mypackage`) in that priority
+   order.
+5. Export environment using (`conda env export > conda_env.yaml`).
+6. Environment can be created on an other system using (`conda env create -f conda_env.yaml`).
 
-2. create environment using (`conda create --name myenv python=3.6`) .
+Links to [Anaconda](https://www.anaconda.com/distribution/#download-section)
+and [Dockerized
+Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/docker/)
 
-3. Switch to the environment using (`conda activate myenv`) .
+## Numpy
 
-4. Use (`conda install mypackage`), (`pip install mypackage`) in that priority order .
+- [Python Data Science Handbook,
+  Amazon](https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057)
+  - Price is currently higher than usual
+- [Python Data Science Handbook,
+  Online](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- [Scipy Lecture notes](https://scipy-lectures.org/intro/)
+- [From python to
+  numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) (More
+  advanced)
 
-5. Export environment using (`conda env export > conda_env.yaml`) .
+### Blockshaped
 
-6. Environment can be created on an other system using (`conda env create -f conda_env.yaml`) .
+Helper for taking square subgrids of a 2d grid. Let's say you have
+a `m = np.arange(36).reshape(6, 6)` and you want to split it up into 3x3 subgrids,
+the first one being `m[:3,:3]`, the second being `m[:3,3:6]`, etc. You can use
+`blockshaped(m,3,3)` to turn it into a _stack_ of 3x3s, then `unblockshaped`
+to _merge_ them back.
 
-Anaconda: https://www.anaconda.com/distribution/#download-section .
+```python
+import numpy as np
+def blockshaped(arr, nrows, ncols):
+    """
+    Return an array of shape (n, nrows, ncols) where
+    n * nrows * ncols = arr.size
 
-Dockerized Anaconda: https://docs.anaconda.com/anaconda/user-guide/tasks/docker/ .
+    If arr is a 2D array, the returned array looks like n subblocks with
+    each subblock preserving the "physical" layout of arr.
+    """
+    h, w = arr.shape
+    return (arr.reshape(h//nrows, nrows, -1, ncols)
+               .swapaxes(1,2)
+               .reshape(-1, nrows, ncols))
 
 
+def unblockshaped(arr, h, w):
+    """
+    Return an array of shape (h, w) where
+    h * w = arr.size
 
-
-
+    If arr is of shape (n, nrows, ncols), n sublocks of shape (nrows, ncols),
+    then the returned array preserves the "physical" layout of the sublocks.
+    """
+    n, nrows, ncols = arr.shape
+    return (arr.reshape(h//nrows, -1, nrows, ncols)
+               .swapaxes(1,2)
+               .reshape(h, w))
+```
 
 ## Advent of Code Tips
 
@@ -84,5 +125,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Thu 26 Dec 2019 02:26:52 PM CST
+Last Modified: Sun 05 Jan 2020 10:34:56 AM CST
 ```
