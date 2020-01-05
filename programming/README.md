@@ -16,8 +16,10 @@ Programming: Making computers do things.
 
 - [Autojump](https://github.com/wting/autojump) Smart "j" like "cd" for your
   most visited directories.
+- [Scc](https://github.com/boyter/scc) fast, accurate, code counter
+- [Onefetch](https://github.com/o2sh/onefetch) Git repository summary on your terminal
 
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Fri 29 Nov 2019 02:27:49 PM CST
+Last Modified: Sun 05 Jan 2020 10:27:10 AM CST
 ```
