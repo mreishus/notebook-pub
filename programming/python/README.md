@@ -42,6 +42,7 @@ Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/docker/)
 - [From python to
   numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/) (More
   advanced)
+- [Official Manual](https://docs.scipy.org/doc/numpy/index.html)
 
 ### Blockshaped
 
@@ -125,5 +126,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Sun 05 Jan 2020 10:34:56 AM CST
+Last Modified: Sun 05 Jan 2020 10:35:55 AM CST
 ```
