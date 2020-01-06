@@ -13,6 +13,10 @@ Best non-beginner books for python:
 - [Python Cookbook, 3rd
   Ed](https://www.amazon.com/Python-Cookbook-Third-David-Beazley/dp/1449340377)
 
+## Misc
+
+- [tqdm](https://github.com/tqdm/tqdm) - Turn any loop into a progress bar
+
 ## Conda
 
 from internet comment:
@@ -126,5 +130,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Sun 05 Jan 2020 10:35:55 AM CST
+Last Modified: Sun 05 Jan 2020 08:12:00 PM CST
 ```
