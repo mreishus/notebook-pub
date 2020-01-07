@@ -17,8 +17,10 @@ Wargames are ongoing challenges, like Advent Of Code.
 
 CTFs are events happening during a specific timeframe.
 
+- [CTF Field Guide](https://trailofbits.github.io/ctf/)
 - [CtfTIme](https://ctftime.org/)
 - [CTF Writeups](https://github.com/ctfs/write-ups-2017)
+
 
 ```
 Created:       Mon 06 Jan 2020 07:49:26 PM CST
