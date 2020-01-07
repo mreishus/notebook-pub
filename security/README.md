@@ -11,6 +11,7 @@ Wargames are ongoing challenges, like Advent Of Code.
 - [PicoCTF](https://picoctf.com/) - Beginner
 - [Pwnable](https://pwnable.tw/challenge/)
 - [We Chall](https://www.wechall.net/about_wechall)
+- [Google Beginner CTF](https://capturetheflag.withgoogle.com/#beginners/)
 
 ## CTF
 
