@@ -8,6 +8,8 @@
 * [Programming](./programming/)
 * [Internet Services](./internet-services/)
 
+- [Security](./security/)
+
 ## Misc
 
 ### Information Radiators
@@ -16,5 +18,5 @@
 
 ```
 Created:       Fri 22 Nov 2019 06:18:43 PM UTC
-Last Modified: Tue 17 Dec 2019 11:18:51 AM CST
+Last Modified: Mon 06 Jan 2020 07:49:46 PM CST
 ```
