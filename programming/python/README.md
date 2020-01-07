@@ -16,6 +16,8 @@ Best non-beginner books for python:
 ## Misc
 
 - [tqdm](https://github.com/tqdm/tqdm) - Turn any loop into a progress bar
+- [Type Hints Cheat
+  Sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
 
 ## Conda
 
@@ -130,5 +132,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Sun 05 Jan 2020 08:12:00 PM CST
+Last Modified: Mon 06 Jan 2020 07:38:34 PM CST
 ```
