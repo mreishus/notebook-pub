@@ -12,6 +12,8 @@
 
 ## Misc
 
+- [CS Cirriculum](https://functionalcs.github.io/curriculum/)
+
 ### Information Radiators
 
 - [LavaPS](https://www.isi.edu/~johnh/SOFTWARE/LAVAPS/)
