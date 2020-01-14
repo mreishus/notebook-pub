@@ -16,6 +16,7 @@
 - [Task.async_stream/2](https://hexdocs.pm/elixir/Task.html)
 - [Flow](https://hexdocs.pm/flow/Flow.html)
 - [GenStage](https://github.com/elixir-lang/gen_stage)
+- [Broadway](https://github.com/plataformatec/broadway)
 
 ## Compile Elixir to Native Code
 
@@ -61,5 +62,5 @@ end
 
 ```
 Created:       Tue 05 Nov 2019 06:45:54 PM CST
-Last Modified: Tue 14 Jan 2020 07:18:26 AM CST
+Last Modified: Tue 14 Jan 2020 07:19:08 AM CST
 ```
