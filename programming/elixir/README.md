@@ -11,6 +11,12 @@
 
 - [Map to Struct, forum thread](https://elixirforum.com/t/how-to-get-struct-from-map-elixir/4543/29)
 
+## Parallel Processing Strategies
+
+- [Task.async_stream/2](https://hexdocs.pm/elixir/Task.html)
+- [Flow](https://hexdocs.pm/flow/Flow.html)
+- [GenStage](https://github.com/elixir-lang/gen_stage)
+
 ## Compile Elixir to Native Code
 
 Add this to the top of an arithmatic based module.
@@ -55,5 +61,5 @@ end
 
 ```
 Created:       Tue 05 Nov 2019 06:45:54 PM CST
-Last Modified: Sun 29 Dec 2019 04:53:20 PM CST
+Last Modified: Tue 14 Jan 2020 07:18:26 AM CST
 ```
