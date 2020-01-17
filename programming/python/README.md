@@ -18,6 +18,9 @@ Best non-beginner books for python:
 - [tqdm](https://github.com/tqdm/tqdm) - Turn any loop into a progress bar
 - [Type Hints Cheat
   Sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
+- [Dataclasses](https://docs.python.org/3/library/dataclasses.html) Like
+  namedtuples, but better. Or records. Class for only holding data. Added in
+  3.7
 
 ## Conda
 
@@ -132,5 +135,5 @@ viable where otherwise it would have been too slow.
 
 ```
 Created:       Sun 17 Nov 2019 07:35:56 AM CST
-Last Modified: Mon 06 Jan 2020 07:38:34 PM CST
+Last Modified: Thu 16 Jan 2020 09:01:01 PM CST
 ```
