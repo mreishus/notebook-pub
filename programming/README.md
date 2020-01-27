@@ -18,8 +18,10 @@ Programming: Making computers do things.
   most visited directories.
 - [Scc](https://github.com/boyter/scc) fast, accurate, code counter
 - [Onefetch](https://github.com/o2sh/onefetch) Git repository summary on your terminal
+- [jql](https://github.com/cube2222/jql) - Lispy JSON parser that parsed some
+  data that jq couldn't. Used `cat input.txt | jql '(id)'` for a pretty view.
 
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Sun 05 Jan 2020 10:27:10 AM CST
+Last Modified: Mon 27 Jan 2020 07:15:30 AM CST
 ```
