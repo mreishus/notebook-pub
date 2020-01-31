@@ -23,6 +23,8 @@
 - [zustand](https://github.com/react-spring/zustand)
 - [react-use-gesture](https://github.com/react-spring/react-use-gesture)
 - [react-three-fiber](https://github.com/react-spring/react-three-fiber)
+- [Blogpost on three-js
+  visuals](https://medium.com/cortico/3d-data-visualization-with-react-and-three-js-7272fb6de432)
 
 ## Misc useful projects
 
@@ -36,5 +38,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Wed 20 Nov 2019 10:17:19 AM CST
+Last Modified: Fri 31 Jan 2020 03:15:09 PM CST
 ```
