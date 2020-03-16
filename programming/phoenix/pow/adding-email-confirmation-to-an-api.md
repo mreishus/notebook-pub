@@ -188,17 +188,18 @@ defmodule MyAppWeb.API.V1.RegistrationController do
   in the 'pow' library.
   REASON: Customize the url sent to include the front-end. ***
   """
-
   @spec send_confirmation_email(map(), Conn.t()) :: any()
-  defp send_confirmation_email(user, conn) do
-    url = confirmation_url(user.email_confirmation_token)
+  def send_confirmation_email(user, conn) do
+    url = confirmation_url(conn, user)
     unconfirmed_user = %{user | email: user.unconfirmed_email || user.email}
     email = PowEmailConfirmation.Phoenix.Mailer.email_confirmation(conn, unconfirmed_user, url)
 
     Pow.Phoenix.Mailer.deliver(conn, email)
   end
 
-  defp confirmation_url(token) do
+  defp confirmation_url(conn, user) do
+    token = PowEmailConfirmation.Plug.sign_confirmation_token(conn, user)
+
     Application.get_env(:my_app, MyAppWeb.Endpoint)[:front_end_email_confirm_url]
     |> String.replace("{token}", token)
   end
@@ -231,15 +232,15 @@ defmodule MyAppWeb.API.V1.ConfirmationController do
 
   @spec show(Conn.t(), map()) :: Conn.t()
   def show(conn, %{"id" => token}) do
-    case PowEmailConfirmation.Plug.confirm_email(conn, token) do
-      {:ok, _user, conn} ->
-        conn
-        |> json(%{success: %{message: "Email confirmed"}})
-
-      {:error, _changeset, conn} ->
+    case PowEmailConfirmation.Plug.load_user_by_token(conn, token) do
+      {:error, conn} ->
         conn
         |> put_status(401)
         |> json(%{error: %{status: 401, message: "Invalid confirmation code"}})
+
+      {:ok, conn} ->
+        conn
+        |> json(%{success: %{message: "Email confirmed"}})
     end
   end
 end
@@ -270,5 +271,5 @@ updates that user as confirmed in the database, so the basics are working.
 
 ```
 Created:       Tue 22 Oct 2019 06:46:12 AM CDT
-Last Modified: Tue 22 Oct 2019 05:33:32 PM CDT
+Last Modified: Mon 16 Mar 2020 11:19:44 AM CDT
 ```
