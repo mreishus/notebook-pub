@@ -21,7 +21,13 @@ Programming: Making computers do things.
 - [jql](https://github.com/cube2222/jql) - Lispy JSON parser that parsed some
   data that jq couldn't. Used `cat input.txt | jql '(id)'` for a pretty view.
 
+## Misc
+
+- [ulid](https://github.com/ulid/javascript) - Universally Unique
+  Lexicographically Sortable Identifier. Like UUID, but monotonically
+  sortable. ([Ruby Implementation](https://github.com/abachman/ulid-ruby))
+
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Mon 27 Jan 2020 07:15:30 AM CST
+Last Modified: Sat 25 Apr 2020 10:07:16 AM CDT
 ```
