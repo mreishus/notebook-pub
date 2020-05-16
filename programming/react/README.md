@@ -7,6 +7,7 @@
 
 ## State Management
 
+- [Recoil](https://recoiljs.org/) (Redux alternative)
 - [Zustand](https://github.com/react-spring/zustand) (Redux alternative)
 - [Redux Toolkit](https://github.com/reduxjs/redux-toolkit) (Reduces the pain
   of redux)
@@ -43,5 +44,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Sat 16 May 2020 04:48:18 PM CDT
+Last Modified: Sat 16 May 2020 05:02:03 PM CDT
 ```
