@@ -1,5 +1,10 @@
 # React
 
+## Rendering / Performance
+
+- [A Mostly Complete Guide to React Rendering
+  Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/)
+
 ## State Management
 
 - [Zustand](https://github.com/react-spring/zustand) (Redux alternative)
@@ -38,5 +43,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Fri 31 Jan 2020 03:15:09 PM CST
+Last Modified: Sat 16 May 2020 04:48:18 PM CDT
 ```
