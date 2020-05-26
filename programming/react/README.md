@@ -32,6 +32,10 @@
 - [Blogpost on three-js
   visuals](https://medium.com/cortico/3d-data-visualization-with-react-and-three-js-7272fb6de432)
 
+## Fun
+
+- [windups](https://github.com/sgwilym/windups) - Typewriter effect library
+
 ## Misc useful projects
 
 - [Why Did You Render?](https://github.com/welldone-software/why-did-you-render)
@@ -44,5 +48,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Sat 16 May 2020 05:02:03 PM CDT
+Last Modified: Mon 25 May 2020 07:25:43 PM CDT
 ```
