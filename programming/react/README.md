@@ -41,6 +41,8 @@
 - [Why Did You Render?](https://github.com/welldone-software/why-did-you-render)
 - [Example of page transition animation, Diag
   sweep](https://codesandbox.io/s/diagonal-page-transition-2wvzx)
+- [Reparenting](https://github.com/paol-imi/react-reparenting)
+- [Teleporter](https://github.com/gregberge/react-teleporter)
 
 ## Links
 
@@ -48,5 +50,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Mon 25 May 2020 07:25:43 PM CDT
+Last Modified: Tue 26 May 2020 06:25:22 PM CDT
 ```

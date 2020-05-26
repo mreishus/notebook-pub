@@ -24,6 +24,11 @@ Cli Based
 - [Go implementation of
   Wormhole](https://github.com/psanford/wormhole-william)
 
+## Blogging/Publishing
+
+- [txti](https://txti.es/) Fast pages for everyone.
+- [bearblog](https://bearblog.dev/) Lets anyone make ultra minimal blogs.
+
 ## Misc
 
 - [FraidyCat](https://fraidyc.at/) - Follow people (hundreds) on whatever
@@ -31,5 +36,5 @@ Cli Based
 
 ```
 Created:       Fri 22 Nov 2019 06:18:17 PM UTC
-Last Modified: Sat 28 Dec 2019 09:46:44 AM CST
+Last Modified: Tue 26 May 2020 06:24:28 PM CDT
 ```

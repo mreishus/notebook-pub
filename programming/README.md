@@ -20,6 +20,7 @@ Programming: Making computers do things.
 - [Onefetch](https://github.com/o2sh/onefetch) Git repository summary on your terminal
 - [jql](https://github.com/cube2222/jql) - Lispy JSON parser that parsed some
   data that jq couldn't. Used `cat input.txt | jql '(id)'` for a pretty view.
+- [http server oneliners](https://gist.github.com/willurd/5720255)
 
 ## Misc
 
@@ -29,5 +30,5 @@ Programming: Making computers do things.
 
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Sat 25 Apr 2020 10:07:16 AM CDT
+Last Modified: Tue 26 May 2020 06:24:54 PM CDT
 ```
