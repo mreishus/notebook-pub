@@ -33,8 +33,11 @@ Cli Based
 
 - [FraidyCat](https://fraidyc.at/) - Follow people (hundreds) on whatever
   platform they choose
+- [twtxt](https://twtxt.readthedocs.io/en/latest/user/intro.html)
+  - Decentralized microblogging via text, on CLI. Share status updates by
+    putting them in a publicy accessible text file.
 
 ```
 Created:       Fri 22 Nov 2019 06:18:17 PM UTC
-Last Modified: Tue 26 May 2020 06:24:28 PM CDT
+Last Modified: Wed 27 May 2020 07:45:13 AM CDT
 ```
