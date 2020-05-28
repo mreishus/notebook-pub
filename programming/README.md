@@ -7,10 +7,12 @@ Programming: Making computers do things.
 - [Elixir, Language](./elixir/)
 - [Go, Language](./go/)
 - [Haskell, Language](./haskell/)
+- [Javascript](./javascript/)
 - [Kubernetes, container orchestration](./kubernetes/)
 - [Phoenix, Web Framework](./phoenix/)
 - [Processing](./processing/)
 - [Python, Language](./python/)
+- [React, JS View framework](./react/)
 
 ## Misc / Shell
 
@@ -30,5 +32,5 @@ Programming: Making computers do things.
 
 ```
 Created:       Tue 22 Oct 2019 06:34:02 AM CDT
-Last Modified: Tue 26 May 2020 06:24:54 PM CDT
+Last Modified: Thu 28 May 2020 06:06:41 PM CDT
 ```
