@@ -43,6 +43,7 @@
   sweep](https://codesandbox.io/s/diagonal-page-transition-2wvzx)
 - [Reparenting](https://github.com/paol-imi/react-reparenting)
 - [Teleporter](https://github.com/gregberge/react-teleporter)
+- [Formik](https://github.com/jaredpalmer/formik) - Form handling library
 
 ## Links
 
@@ -50,5 +51,5 @@
 
 ```
 Created:       Thu 24 Oct 2019 11:40:32 AM CDT
-Last Modified: Tue 26 May 2020 06:25:22 PM CDT
+Last Modified: Wed 03 Jun 2020 10:27:01 PM CDT
 ```
