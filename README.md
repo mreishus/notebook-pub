@@ -5,8 +5,8 @@
 - [Collaboration](./collaboration/)
 - [Operations](./ops/)
 
-* [Programming](./programming/)
-* [Internet Services](./internet-services/)
+- [Programming](./programming/)
+- [Internet Services](./internet-services/)
 
 - [Security](./security/)
 
